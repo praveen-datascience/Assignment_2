@@ -48,6 +48,10 @@ df_co2emission = read_my_excel("co2_emission_updated.xls")
 #print(df_forest.head())
 #print(df_co2emission.head())
 
+#using describe method try to analyze the whole statistical data
+print(df_forest.describe())
+print(df_co2emission.describe())
+
 #keep only desired columns
 df_forest = filter_desired_columns(df_forest,['Country Name', 'Country Code', '1991', '1995', '1999'])
 df_co2emission = filter_desired_columns(df_co2emission,['Country Name', 'Country Code', '1991', '1995', '1999'])
